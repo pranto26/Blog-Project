@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage';
 import ByCategoryPage from './pages/ByCategoryPage';
 import DetailsPage from './pages/DetailsPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
                 <Route path="/details/:postID" element={<DetailsPage/>}/>
      </Routes>
      </BrowserRouter>
+     <Footer/>
      
     </div>
   );
